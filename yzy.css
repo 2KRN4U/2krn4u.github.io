@@ -1,0 +1,27 @@
+
+
+/* CSS Document */
+@charset "utf-8";
+
+@font-face {
+	font-family: 'yeezy';
+	src: url("fonts/yzy.eot");
+	src:
+	local('Yeezy'),
+	local('yzy'),
+	url("fonts/yzy.ttf")
+	format("truetype");
+ }
+
+/*container element*/
+div {font-family: 'yeezy', sans-serif;}
+
+/*span elements inside the container div*/
+span {font-weight: bold;}
+
+html * {font-family: yeezy !important;}
+
+.jumbotron {background-color: transparent !important;}
+
+.col-xs-6 h1 {margin-left: 60px !important;}
+
