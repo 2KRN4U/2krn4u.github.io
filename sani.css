@@ -1,0 +1,205 @@
+/* CSS Document */
+@charset "utf-8";
+
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color: #FFC4C5; /*Sets the text hover color on navbar*/}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: black; /*BACKGROUND color for active*/
+	background-color: #030033;
+ }
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #030033;
+ }
+
+.dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #EEA1FF; /*change color of links in drop down here*/
+ }
+
+.nav > li > a:hover,
+ .nav > li > a:focus {
+	text-decoration: none;
+	background-color: silver; /*Change rollover cell color here*/
+ }
+
+.navbar-default .navbar-nav > li > a {color: black; /*Change active text color here*/}
+
+.row {
+	padding-left: 150px;
+	padding-top: 30px;
+}
+
+.thumbnail {
+	margin-right: 30px;
+}
+
+.thumbnail img {
+	height: 450px;
+}
+
+.row .description {
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 200px;
+}
+.row .description2 {
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 130px;
+}
+
+.row .description3 {
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 140px;
+}
+
+.row span p {
+	display: inline;
+}
+
+.row h6 {
+	color: gray;
+}
+
+.container .h1 {
+	padding-left: 50px;
+}
+
+.jumbotron {
+	background-color: transparent !important;
+	color: #000000;
+	align-content: center;
+	  padding: 0px;
+  margin-bottom: 0px;
+	margin-left: 0px;
+  color: inherit;
+  background: url(images/ha5poht84d8y.png)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: 100%;
+ }
+
+.jumbotron h1{
+	color: white;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
+}
+.jumbotron p{
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-size: 30px
+}
+.container-fluid {
+    padding: 0px;
+}
+.body {
+	background-color: #000 !important;
+}
+
+.container .jumbotron {
+    border-radius: 6px;
+}
+
+.content-block-one {
+  padding: 30px;
+  margin-bottom: 0px;
+  color: inherit;
+  background-color: #000000;
+}
+.content-block-one h1,
+.content-block-one .h1 {
+  color: white;
+}
+.content-block-one p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+	color: white;
+}
+.content-block-one > hr {
+  border-top-color: #d5d5d5;
+}
+.container .content-block-one {
+  border-radius: 6px;
+}
+.content-block-one .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content-block-one {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .content-block-one {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .content-block-one h1,
+  .content-block-one .h1 {
+    font-size: 63px;
+  }
+}
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(images/cap2.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content-space-one hover {
+	-webkit-filter: blur(5px);
+}
+.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(images/littlewitch.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-break {
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 800px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+	margin: 0 auto;
+	align-content: center;
+}
+
+/*.carousel .item img:hover{
+	-webkit-filter: blur(5px);
+}/*
