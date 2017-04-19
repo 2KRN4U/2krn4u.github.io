@@ -1,6 +1,4 @@
 // JavaScript Document
-
-// Pauses carousel on hover :3
 $(function(){
     $('#myCarousel.slide').carousel({
         interval: 5000,

@@ -68,6 +68,10 @@
 	display: inline;
 }
 
+.row h5 {
+	color: gray;
+}
+
 .row h6 {
 	color: gray;
 }
