@@ -89,7 +89,7 @@ function cdtdsuka() {
 }
 //SaeKano
 function cdtdsaek() {
-	var saek = new Date("April 20, 2017 14:00:00 ");
+	var saek = new Date("April 27, 2017 14:00:00 ");
 	var now = new Date();
 	var timeDiff = saek.getTime() - now.getTime();
 	
@@ -111,7 +111,7 @@ function cdtdsaek() {
 }
 //Renai Boukun
 function cdtdrenai() {
-	var renai = new Date("April 20, 2017 12:10:00 ");
+	var renai = new Date("April 27, 2017 12:10:00 ");
 	var now = new Date();
 	var timeDiff = renai.getTime() - now.getTime();
 	
@@ -133,7 +133,7 @@ function cdtdrenai() {
 }
 //Hinako Note
 function cdtdhinako() {
-	var hinako = new Date("April 21, 2017 06:30:00 ");
+	var hinako = new Date("April 28, 2017 06:30:00 ");
 	var now = new Date();
 	var timeDiff = hinako.getTime() - now.getTime();
 	
@@ -155,7 +155,7 @@ function cdtdhinako() {
 }
 //Sword Oratoria
 function cdtdsword() {
-	var sword = new Date("April 21, 2017 09:30:00 ");
+	var sword = new Date("April 28, 2017 09:30:00 ");
 	var now = new Date();
 	var timeDiff = sword.getTime() - now.getTime();
 	
