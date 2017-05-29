@@ -161,3 +161,26 @@
 /*.carousel .item img:hover{
 	-webkit-filter: blur(5px);
 }/*
+
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
