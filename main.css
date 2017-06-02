@@ -86,6 +86,11 @@
 .content-block-one .h1 {
   color: white;
 }
+
+.content-block-one h2,
+.content-block-one .h2 {
+  color: white;
+}
 .content-block-one p {
   margin-bottom: 15px;
   font-size: 21px;
