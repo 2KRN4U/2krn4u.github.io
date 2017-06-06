@@ -1,6 +1,6 @@
 // Tsugumomo
 function cdtd() {
-	var tsugu = new Date("June 04, 2017 08:30:00 ");
+	var tsugu = new Date("June 11, 2017 08:30:00 ");
 	var now = new Date();
 	var timeDiff = tsugu.getTime() - now.getTime();
 	
@@ -22,7 +22,7 @@ function cdtd() {
 }
 // Zero kara
 function cdtdzero() {
-	var zero = new Date("June 05, 2017 08:30:00 ");
+	var zero = new Date("June 12, 2017 08:30:00 ");
 	var now = new Date();
 	var timeDiff = zero.getTime() - now.getTime();
 	
@@ -44,7 +44,7 @@ function cdtdzero() {
 }
 //Rokudenashi
 function cdtdakr() {
-	var akr = new Date("June 06, 2017 08:30:00 ");
+	var akr = new Date("June 13, 2017 08:30:00 ");
 	var now = new Date();
 	var timeDiff = akr.getTime() - now.getTime();
 	
@@ -67,7 +67,7 @@ function cdtdakr() {
 
 //SukaSuka
 function cdtdsuka() {
-	var suka = new Date("June 06, 2017 09:00:00 ");
+	var suka = new Date("June 13, 2017 09:00:00 ");
 	var now = new Date();
 	var timeDiff = suka.getTime() - now.getTime();
 	
