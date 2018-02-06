@@ -35,35 +35,38 @@ function acronym() {
 }
 
 function cross() {
-  let row, star, space;
-  let toPrint = "";
-  let i = +prompt("Enter rows of stars to print.");
+    let row, star, space;
+    let output = "";
+    let i = +prompt("Enter rows (Odd number).");
+    if (i % 2 !== 0) {
+        for (row = 1; row <= i; row++) {
+            if (row === ((i / 2 + 0.5))) {
+                output += repString("*", i);
+                output += "\n";
+                row++;
+            }
+            for (space = 0; space < ((i / 2) - 0.5); space++) {
+                output += "&nbsp;";
+            }
+            for (star = 1; star <= row;) {
+                output += "*";
+                break;
+            }
 
-  for (row = 1; row <= i; row++) {
-    if (row === ((i/2+0.5))) {
-		toPrint += repString("*",i);
-		toPrint += "\n";
-		row++;
-	} 
-	  for (space = 0; space < ((i/2)-0.5); space++){
-      toPrint += "&nbsp;";
-    }
-    for (star = 1; star <= row; ) {
-      toPrint += "*";
-		break;
-    }
+            output += "\n";
+        }
 
-    toPrint += "\n";
-	}
-  
-  document.getElementById("crossoutput").innerHTML = toPrint;
+        document.getElementById("crossoutput").innerHTML = output;
+    } else {
+        i = alert("You did not enter a odd number.")
+    }
 }
 
-	function repString(string, num) {
-  let repString = "";
-  while (num > 0) {
-    repString += string;
-    num--;
-  }
-  return repString;
+function repString(string, num) {
+    let repString = "";
+    while (num > 0) {
+        repString += string;
+        num--;
+    }
+    return repString;
 }
