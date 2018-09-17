@@ -61,7 +61,23 @@
                               :':.:.  "                                                 :''    :
                               '.:  -.'"                                                 /''.- .-
                                     ···                                                 --.♪  /
-                                                                                          .:  ♪
+               	for (let i = 0; i<animejson.results.length; i++){
+		let animejson2;
+		animejson2 = $.getJSON('https://api.jikan.moe/v3/anime/'+animejson[i].results.mal_id);
+		animejson2 = animejson2.responseJSON;
+			for (let i = 0; i<animejson2.genres.length;i++){
+				if (genre == false){
+					genre = animejson2.genres[i].name;
+				} else {
+					genre += ", " + animejson2.genres[i].name;
+				}
+				
+			}
+		anime = new CreateAnime(animejson2.title,animejson2.title_japanese,animejson2.synopsis,animejson2.synopsis,animejson2.image_url,genre,animejson2.episodes);
+		animeArr.push(anime);
+	}
+	
+	createHTML();                                                                           .:  ♪
                                                                                            :__
                                                                                             ·u·
 -->
