@@ -19,16 +19,16 @@ body, html {
      position: fixed;
      right: 0;
      z-index: -1;
-	 background-image:url("https://wallpapercave.com/wp/wp1834753.jpg");
+	 background-image:url("https://i.imgur.com/hRSqTsX.jpg");
 }
 .card {
 	overflow: scroll;
 	overflow-y: scroll;
 }
-.row .description {
+.description {
 	overflow: hidden;
 	overflow-y: scroll;
-	height: 10rem;
+	height: 15rem;
 }
 
 ::-webkit-scrollbar { 
@@ -39,14 +39,6 @@ body, html {
 	color: #d1d1d1;
 }
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}
-.row > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+.alttitle {
+	color: #b0abaa;
 }
