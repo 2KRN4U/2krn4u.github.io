@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+      <script src="JavascriptSubtitlesOctopus-2.0.1/dist/subtitles-octopus.js"></script>
+
+      <title>Video | 2KRN</title>
+   </head>
+   <body>
+      <div class="background"></div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+         <a class="navbar-brand" href="#">2KRN</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="../search">Search</a>
+               <a class="nav-item nav-link active" href="../wholesome">Wholesome Animu </a>
+            </div>
+         </div>
+      </nav>
+        <div class="container">
+        <video id='my-video' class='video-js' controls preload='auto' width='1280' height='720'
+  poster='pic.jpg' data-setup='{}'>
+    <source src="https://openings.moe/video/MikakuninDeShinkoukei-ED01-NCBD.webm" type='video/mp4'>
+    <p class='vjs-no-js'>
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
+        <script>
+	   	var options = {
+    video: document.getElementById('my-video'), // HTML5 video element
+    subUrl: 'sub.ass', // Link to subtitles
+    fonts: ['fonts/SNsanafonkakuP.ttf'], // Links to fonts (not required, default font already included in build)
+    workerUrl: 'JavascriptSubtitlesOctopus-2.0.1/dist/subtitles-octopus-worker.js' // Link to file "libassjs-worker.js"
+};
+var instance = new SubtitlesOctopus(options);
+	   </script>
+  </div>
+   </body>
+</html>
