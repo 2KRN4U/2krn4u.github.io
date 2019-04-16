@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="main.css">
       <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
       <script src="subtitles-octopus.js"></script>
+	   <script src="main.js"></script>
 
       <title>Video | 2KRN</title>
    </head>
@@ -30,44 +31,28 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="../mikakunin">Engaged to the Unidentified</a>
+          <a class="dropdown-item" href="../dropkick">Gabriel Dropout</a>
           <a class="dropdown-item" href="../chuchuyeah">Miss Kobayashi's Dragon Maid</a>
         </div>
       </li>
             </div>
          </div>
       </nav>
-        <div class="container">
+        <div class="d-flex justify-content-center">
+        <div class="videocontent">
         <video id='video' class='video-js vjs-big-play-centered' controls preload='auto' width='1280' height='720'
-  poster='pic.jpg' data-setup='{}'>
+  poster='pic.jpg' data-setup='{"fluid": true}'>
     <source src="https://openings.moe/video/Kobayashi-SanChiNoMaidDragon-OP01-NCBD.webm" type='video/mp4'>
     <p class='vjs-no-js'>
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
     </p>
   </video>
-
-  <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
-        <script>
-videojs('video').ready(function () {
-        // This would look more nice as a plugin but is's just as showcase of using with custom players
-        var video = this.tech_.el_;
-        window.SubtitlesOctopusOnLoad = function () {
-            var options = {
-                video: video,
-                subUrl: 'opening.ass',
-                fonts: ['TimesNewRoman.ttf','AdvertBold.otf'],
-                //onReady: onReadyFunction,
-                //debug: true,
-                workerUrl: 'subtitles-octopus-worker.js'
-            };
-            window.octopusInstance = new SubtitlesOctopus(options); // You can experiment in console
-        };
-        if (SubtitlesOctopus) {
-            SubtitlesOctopusOnLoad();
-        }
-    });
-			</script>
-
+</div>
+  <script src='https://vjs.zencdn.net/7.4.1/video.js' onload="setup()"></script>
   </div>
+  	<div class="d-flex justify-content-center">
+		<button onClick="toggleSubtitles()" class="btn btn-primary">Toggle Subtitles</button>
+	</div>
    </body>
 </html>

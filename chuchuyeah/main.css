@@ -42,3 +42,8 @@ body, html {
 .alttitle {
 	color: #b0abaa;
 }
+
+.videocontent {
+	width: 80%;
+	max-width: 1080px;
+}
