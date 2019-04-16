@@ -28,7 +28,7 @@
          </div>
       </nav>
         <div class="container">
-        <video id='my-video' class='video-js' controls preload='auto' width='1280' height='720'
+        <video id='video' class='video-js vjs-big-play-centered' controls preload='auto' width='1280' height='720'
   poster='pic.jpg' data-setup='{}'>
     <source src="https://openings.moe/video/MikakuninDeShinkoukei-ED01-NCBD.webm" type='video/mp4'>
     <p class='vjs-no-js'>
@@ -39,14 +39,26 @@
 
   <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
         <script>
-	   	var options = {
-    video: document.getElementById('my-video'), // HTML5 video element
-    subUrl: 'sub.ass', // Link to subtitles
-    fonts: ['fonts/SNsanafonkakuP.ttf'], // Links to fonts (not required, default font already included in build)
-    workerUrl: 'JavascriptSubtitlesOctopus-2.0.1/dist/subtitles-octopus-worker.js' // Link to file "libassjs-worker.js"
-};
-var instance = new SubtitlesOctopus(options);
-	   </script>
+videojs('video').ready(function () {
+        // This would look more nice as a plugin but is's just as showcase of using with custom players
+        var video = this.tech_.el_;
+        window.SubtitlesOctopusOnLoad = function () {
+            var options = {
+                video: video,
+                subUrl: 'sub.ass',
+                fonts: ['SNsanafonkakuP.ttf', 'TimesNewRoman.ttf'],
+                //onReady: onReadyFunction,
+                //debug: true,
+                workerUrl: 'subtitles-octopus-worker.js'
+            };
+            window.octopusInstance = new SubtitlesOctopus(options); // You can experiment in console
+        };
+        if (SubtitlesOctopus) {
+            SubtitlesOctopusOnLoad();
+        }
+    });
+			</script>
+
   </div>
    </body>
 </html>
