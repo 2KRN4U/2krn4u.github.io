@@ -103,7 +103,7 @@ var barcode = function() {
 		  }
 		}
 
-		navigator.mediaDevices.getUserMedia({ audio: false, video: true })
+		navigator.mediaDevices.getUserMedia({ audio: false, video: {facingMode: {exact: "environment"}} })
 		.then(function(stream) {
 		  var video = document.querySelector('video');
 		  // Older browsers may not have srcObject
