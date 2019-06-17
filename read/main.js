@@ -10,5 +10,5 @@ $.ajax({
 });
 
 function readManga(mangaCode) {
-	window.open(manga[mangaCode], '_blank');
+	window.location = manga[mangaCode];
 }
