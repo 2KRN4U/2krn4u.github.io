@@ -263,8 +263,7 @@ $(function() {
         if(manga[code] != undefined){
 			readManga(code);
 			Quagga.stop();
-		}
-		if(code.charAt(0) == 9 && code.charAt(1) == 7 && code.charAt(2) == 8){
+		} else if(code.charAt(0) == 9 && code.charAt(1) == 7 && code.charAt(2) == 8){
 			alert("This manga has either not been added, or has no current translation available online.");
 			Quagga.stop();
 		}
