@@ -260,8 +260,10 @@ $(function() {
     Quagga.onDetected(function(result) {
         var code = result.codeResult.code;
 
-        readManga(code);
-		Quagga.stop();
+        if(manga[code] != undefined){
+			readManga(code);
+			Quagga.stop();
+		}
     });
 
 });
