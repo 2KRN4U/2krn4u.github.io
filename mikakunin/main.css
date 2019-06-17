@@ -47,3 +47,6 @@ body, html {
 	width: 80%;
 	max-width: 1080px;
 }
+.subButton {
+	padding-top: 30px;
+}
