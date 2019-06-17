@@ -2,13 +2,13 @@
 let manga;
 
 $.ajax({
-	url: 'test.json',
+	url: 'manga.json',
 	dataType: 'json',
 	success: function(data){
 		manga = data;
       }
 });
 
-function readManga() {
-	window.open(manga[4040677978], '_blank');
+function readManga(mangaCode) {
+	window.open(manga[mangaCode], '_blank');
 }
