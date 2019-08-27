@@ -21,10 +21,6 @@ body, html {
      z-index: -1;
 	 background-image:url("https://i.imgur.com/lnThG4v.jpg");
 }
-.card {
-	overflow: scroll;
-	overflow-y: scroll;
-}
 .row .description {
 	overflow: hidden;
 	overflow-y: scroll;
@@ -49,4 +45,23 @@ body, html {
 .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
+}
+
+.alttitle {
+  color: #b0abaa;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.card {
+  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.description {
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 15rem;
 }

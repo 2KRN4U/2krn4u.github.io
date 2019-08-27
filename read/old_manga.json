@@ -1,24 +1,6 @@
 {
-  "9784040677972": {
-    "chapterlink": "https://mangadex.org/chapter/27944/",
-    "image": "https://i.imgur.com/Ja5eAGn.png",
-    "en_name": "Ms. Vampire who lives in my neighborhood",
-    "romaji": "Tonari no Kyuuketsuki-san",
-    "jp_name": "となりの吸血鬼さん",
-    "chapter": "1",
-    "volume": "1",
-    "desc": "High school girl Akari was lost in a forest when she was rescued by a vampire girl named Sophie. Since then, Akari has developed a liking for Sophie, who prefers to be alone."   
-  },
-  "9784040684079": {
-    "chapterlink": "https://mangadex.org/chapter/392329/1",
-    "image": "https://i.imgur.com/To2jMo5.jpg",
-    "en_name": "Ms. Vampire who lives in my neighborhood",
-    "romaji": "Tonari no Kyuuketsuki-san",
-    "jp_name": "となりの吸血鬼さん",
-    "chapter": "11",
-    "volume": "2",
-    "desc": "High school girl Akari was lost in a forest when she was rescued by a vampire girl named Sophie. Since then, Akari has developed a liking for Sophie, who prefers to be alone."
-  },
+  "9784040677972": "https://mangadex.org/chapter/27944/",
+  "9784040684079": "https://mangadex.org/chapter/392329/",
   "9784047301436": "https://mangadex.org/chapter/9316/2",
   "9784047306356": "https://mangadex.org/chapter/9320/2",
   "9784047342521": "https://mangadex.org/chapter/9329/2",
