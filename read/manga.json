@@ -1,6 +1,7 @@
 {
   "9784040677972": {
     "chapterlink": "https://mangadex.org/chapter/27944/",
+    "mdexlink": "https://mangadex.org/title/19838/tonari-no-kyuuketsuki-san",
     "image": "https://i.imgur.com/Ja5eAGn.png",
     "en_name": "Ms. Vampire who lives in my neighborhood",
     "romaji": "Tonari no Kyuuketsuki-san",
@@ -11,6 +12,7 @@
   },
   "9784040684079": {
     "chapterlink": "https://mangadex.org/chapter/392329/1",
+    "mdexlink": "https://mangadex.org/title/19838/tonari-no-kyuuketsuki-san",
     "image": "https://i.imgur.com/To2jMo5.jpg",
     "en_name": "Ms. Vampire who lives in my neighborhood",
     "romaji": "Tonari no Kyuuketsuki-san",
@@ -36,6 +38,17 @@
   "9784049124309": "https://mangadex.org/chapter/25456/1",
   "9784048922227": "https://manganelo.com/chapter/sword_art_online_progressive/chapter_22",
   "9784088814544": "https://mangadex.org/chapter/5980/1",
-  "9784040693576": "https://mangadex.org/title/19838/tonari-no-kyuuketsuki-san"
+  "9784040693576": "https://mangadex.org/title/19838/tonari-no-kyuuketsuki-san",
+  "9781626929067": {
+    "chapterlink": "https://mangadex.org/chapter/50302/1",
+    "mdexlink": "https://mangadex.org/title/20380/elf-san-wa-yaserarenai",
+    "image": "https://i.imgur.com/Z2OaJ8T.jpg",
+    "en_name": "Plus-Sized Elf",
+    "romaji": "Elf-san wa Yaserarenai",
+    "jp_name": "エルフさんは痩せられない。",
+    "chapter": "1",
+    "volume": "1",
+    "desc": "A young man, Naoe Tomoaki, works as a consultant at a popular Seitai therapy clinic. He is in charge of the treatment of a woman on her diet course. But the woman is an elf from a different world with sharp ears and a bow! Why are the elves, who should be slender, getting fat? And will her diet succeed!?"
+  }
   
 }
