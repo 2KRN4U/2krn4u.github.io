@@ -27,10 +27,9 @@ function setup() {
 };
 //['opening_cred.ass', 'opening_kar.ass', 'opening_kar_jp.ass', 'opening_kar+cred.ass']
 function toggleSubtitles() {
-	window.octopusInstance.freeTrack();
+	octopusInstance.dispose();
 	if (document.getElementById("subactive").value === "None") {
-		window.octopusInstance.freeTrack();
-		subOn = false;
+		octopusInstance.dispose();
 	} else if (document.getElementById("subactive").value === "Lyrics") {
 		track = 'opening_kar.ass';
 		setup();
