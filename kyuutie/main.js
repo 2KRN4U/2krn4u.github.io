@@ -27,23 +27,28 @@ function setup() {
 };
 //['opening_cred.ass', 'opening_kar.ass', 'opening_kar_jp.ass', 'opening_kar+cred.ass']
 function toggleSubtitles() {
-	octopusInstance.dispose();
-	if (document.getElementById("subactive").value === "Lyrics") {
+	if (document.getElementById("subactive").value === "None") {
+		octopusInstance.dispose();
+	} else if (document.getElementById("subactive").value === "Lyrics") {
+        octopusInstance.dispose();
 		track = 'opening_kar.ass';
 		setup();
 		window.octopusInstance.setTrackByUrl(track);
 		subOn = true;
 	} else if (document.getElementById("subactive").value === "Credits") {
+        octopusInstance.dispose();
 		track = 'opening_cred.ass';
 		setup();
 		window.octopusInstance.setTrackByUrl(track);
 		subOn = true;
 	} else if (document.getElementById("subactive").value === "Lyrics | Credits") {
+        octopusInstance.dispose();
 		track = 'opening_kar+cred.ass';
 		setup();
 		window.octopusInstance.setTrackByUrl(track);
 		subOn = true;
 	} else if (document.getElementById("subactive").value === "kashi") {
+        octopusInstance.dispose();
 		track = 'opening_kar_jp.ass';
 		setup();
 		window.octopusInstance.setTrackByUrl(track);
