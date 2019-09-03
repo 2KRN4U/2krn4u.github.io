@@ -28,9 +28,7 @@ function setup() {
 //['opening_cred.ass', 'opening_kar.ass', 'opening_kar_jp.ass', 'opening_kar+cred.ass']
 function toggleSubtitles() {
 	octopusInstance.dispose();
-	if (document.getElementById("subactive").value === "None") {
-		octopusInstance.dispose();
-	} else if (document.getElementById("subactive").value === "Lyrics") {
+	if (document.getElementById("subactive").value === "Lyrics") {
 		track = 'opening_kar.ass';
 		setup();
 		window.octopusInstance.setTrackByUrl(track);
