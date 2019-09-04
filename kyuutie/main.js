@@ -28,41 +28,23 @@ function setup() {
 //['opening_cred.ass', 'opening_kar.ass', 'opening_kar_jp.ass', 'opening_kar+cred.ass']
 function toggleSubtitles() {
 	if (document.getElementById("subactive").value === "None") {
-		if (subOn) {
-            octopusInstance.dispose();
-        }
-        subOn = false;
+		octopusInstance.freeTrack();
+
 	} else if (document.getElementById("subactive").value === "Lyrics") {
-        if (subOn) {
-            octopusInstance.dispose();
-        }
 		track = 'opening_kar.ass';
-		setup();
-		window.octopusInstance.setTrackByUrl(track);
-		subOn = true;
+        octopusInstance.setTrackByUrl(track);
+
 	} else if (document.getElementById("subactive").value === "Credits") {
-        if (subOn) {
-            octopusInstance.dispose();
-        }
 		track = 'opening_cred.ass';
-		setup();
-		window.octopusInstance.setTrackByUrl(track);
-		subOn = true;
+        octopusInstance.setTrackByUrl(track);
+
 	} else if (document.getElementById("subactive").value === "Lyrics | Credits") {
-        if (subOn) {
-            octopusInstance.dispose();
-        }
 		track = 'opening_kar+cred.ass';
-		setup();
-		window.octopusInstance.setTrackByUrl(track);
-		subOn = true;
+        octopusInstance.setTrackByUrl(track);
+
 	} else if (document.getElementById("subactive").value === "kashi") {
-        if (subOn) {
-            octopusInstance.dispose();
-        }
 		track = 'opening_kar_jp.ass';
-		setup();
-		window.octopusInstance.setTrackByUrl(track);
-		subOn = true;
+        octopusInstance.setTrackByUrl(track);
+        
 	}
 }
