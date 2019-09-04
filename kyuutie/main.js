@@ -71,6 +71,7 @@ function updateMetadata() {
 	navigator.mediaSession.metadata = new MediaMetadata({
     title: '†吸tie Ladies†',
     artist: 'ソフィー・トワイライト(CV:富田美憂)、天野灯(CV:篠原侑)、夏木ひなた(CV:Lynn)、エリー(CV:和氣あず未)',
+	album: '†吸tie Ladies† / HAPPY!!ストレンジフレンズ',
     artwork: [{ src: 'https://i.imgur.com/EdJz8NO.jpg', sizes: '500x499', type: 'image/jpg' },]
   });
 }
