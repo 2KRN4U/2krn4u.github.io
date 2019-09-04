@@ -60,21 +60,17 @@ function playVideo() {
 }
 
 navigator.mediaSession.setActionHandler('play', function() {
-  console.log('> User clicked "Play" icon.');
   playVideo();
-  // Do something more than just playing video...
 });
 
 navigator.mediaSession.setActionHandler('pause', function() {
-  console.log('> User clicked "Pause" icon.');
   pauseVideo();
-  // Do something more than just pausing video...
 });
 
 function updateMetadata() {
 	navigator.mediaSession.metadata = new MediaMetadata({
     title: '†吸tie Ladies†',
     artist: 'ソフィー・トワイライト(CV:富田美憂)、天野灯(CV:篠原侑)、夏木ひなた(CV:Lynn)、エリー(CV:和氣あず未)',
-    artwork: [{ src: 'art.jpg', sizes: '500x499', type: 'image/jpg' },]
+    artwork: [{ src: 'https://i.imgur.com/EdJz8NO.jpg', sizes: '500x499', type: 'image/jpg' },]
   });
 }
