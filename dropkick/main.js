@@ -14,7 +14,7 @@ function setup() {
             var options = {
                 video: video,
                 subUrl: track,
-                fonts: ['OpenSans.ttf', 'JanieHmkBold.ttf'],
+                fonts: ['OpenSans.ttf', 'jhb.ttf', 'p.ttf', 'fph.ttf'],
                 //onReady: onReadyFunction,
                 //debug: true,
                 workerUrl: 'subtitles-octopus-worker.js'
@@ -87,7 +87,7 @@ function changeVideoOP() {
 		curAlbum = 'ガヴリールドロップキック';
 		curArt = [{src: 'https://i.imgur.com/3wKIwqC.jpg', sizes: '500x496', type: 'image/jpg'}, ];
 		document.title = "Gabriel DropKick | ガヴリールドロップキック";
-        videojsPlayer.src("https://openings.moe/video/GabrielDropOut-OP01-CBD.webm");
+        videojsPlayer.src("https://animethemes.moe/video/GabrielDropout-OP1-NCBD1080.webm");
 		document.getElementById("subactive").innerHTML = "";
 		document.getElementById("subactive").innerHTML = "<option>Lyrics</option><option>None</option>";
 		updateMetadata();

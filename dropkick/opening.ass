@@ -10,112 +10,113 @@ PlayResX: 848
 PlayResY: 480
 
 [Aegisub Project Garbage]
-Audio File: GabrielDropOut-OP01-CBD.mp4
-Video File: GabrielDropOut-OP01-CBD.mp4
+Audio File: D:/My Document/Download/[Onamynuos] Gabriel Dropout (01-12 + OVAs) (BDRip 1920x1080 x264 FLAC)/[Onamynuos] Gabriel Dropout - OP (BDRip 1920x1080 x264 FLAC).mkv
+Video File: D:/My Document/Download/[Onamynuos] Gabriel Dropout (01-12 + OVAs) (BDRip 1920x1080 x264 FLAC)/[Onamynuos] Gabriel Dropout - OP (BDRip 1920x1080 x264 FLAC).mkv
 Video AR Mode: 4
 Video AR Value: 1.777778
 Video Zoom Percent: 0.250000
-Video Position: 270
+Video Position: 1392
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Default,Open Sans Semibold,13,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1.33333,1.33333,2,7,7,7,1
-Style: OP-Gab,Open Sans Semibold,33,&H00FFFFFF,&H000000FF,&H000E97AC,&HA00F5760,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,2,33,433,27,1
-Style: OP-Vigne,Open Sans Semibold,33,&H00FFFFFF,&H000000FF,&H00951C71,&HA05E0D46,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,2,433,33,27,1
-Style: OP-Satania,Open Sans Semibold,33,&H00FFFFFF,&H000000FF,&H00142CDC,&HA009156A,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,8,33,433,27,1
-Style: OP-Raphi,Open Sans Semibold,33,&H00FFFFFF,&H000000FF,&H00D58711,&HA05F3E0C,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,8,433,33,27,1
-Style: GabDro-OP,Open Sans Semibold,32,&H00D7FFFF,&H000000FF,&H00F4BC37,&H00000000,0,0,0,0,90,100,0,0,1,2,0,8,27,27,20,1
-Style: GabDro-ED,Open Sans Semibold,33,&H00D7FFFF,&H000000FF,&H00F4BC37,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,27,27,20,1
+Style: Default,Arial,13,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1.33333,1.33333,2,7,7,7,1
+Style: OP-Gab,Painfresco,33,&H00FFFFFF,&H000000FF,&H000E97AC,&HA00F5760,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,2,33,433,27,1
+Style: OP-Vigne,Painfresco,33,&H00FFFFFF,&H000000FF,&H00951C71,&HA05E0D46,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,2,433,33,27,1
+Style: OP-Satania,Painfresco,33,&H00FFFFFF,&H000000FF,&H00142CDC,&HA009156A,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,8,33,433,27,1
+Style: OP-Raphi,Painfresco,33,&H00FFFFFF,&H000000FF,&H00D58711,&HA05F3E0C,-1,0,0,0,100,100,0,0,1,1.73333,0.666667,8,433,33,27,1
+Style: GabDro-OP,FOT-PopHappiness Std EB-EN,32,&H00D7FFFF,&H000000FF,&H00F4BC37,&H00000000,0,0,0,0,90,100,0,0,1,2,0,8,27,27,20,1
+Style: GabDro-ED,JanieHmkBold,33,&H00D7FFFF,&H000000FF,&H00F4BC37,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,27,27,20,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:03.09,0:00:05.97,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}tenshi no hane hirogete
-Dialogue: 0,0:00:03.09,0:00:05.97,GabDro-OP,,0,0,0,,{\an2\fad(200,80)\blur2.667}I'll spread wide my angel's wings
-Dialogue: 0,0:00:05.97,0:00:10.06,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}minna ni shukufuku wo
-Dialogue: 0,0:00:05.97,0:00:10.06,GabDro-OP,,0,0,0,,{\an2\fad(80,200)\blur2.667}And deliver joy and peace to the world
-Dialogue: 0,0:00:10.06,0:00:11.52,OP-Gab,,0,0,0,,{\q2}Man, singing's effort.
-Dialogue: 0,0:00:10.06,0:00:13.27,OP-Vigne,,0,0,0,,{\q2}Will you snap out of it already?!\N You're an angel!
-Dialogue: 0,0:00:10.06,0:00:11.97,OP-Satania,,0,0,0,,{\q2}Muahahaha!
-Dialogue: 0,0:00:10.06,0:00:12.97,OP-Raphi,,0,0,0,,{\q2}Isn't the weather heavenly\N today? Good day, everyone.
-Dialogue: 0,0:00:11.52,0:00:13.56,OP-Gab,,0,0,0,,{\q2}Can't someone do it for\N me for, like, 10 yen?
-Dialogue: 0,0:00:11.97,0:00:15.52,OP-Satania,,0,0,0,,{\q2}I am the ultimate archdemon!\N My name shakes the heavens!
-Dialogue: 0,0:00:12.97,0:00:15.94,OP-Raphi,,0,0,0,,{\q2\fscx98}You look so exhilarated, studying\N and working like worker ants.
-Dialogue: 0,0:00:13.27,0:00:15.94,OP-Vigne,,0,0,0,,{\q2}So start acting angelic\N and do your job!
-Dialogue: 0,0:00:13.56,0:00:15.52,OP-Gab,,0,0,0,,{\q2}I microtransactioned\N too hard, so I'm broke.
-Dialogue: 0,0:00:15.52,0:00:18.11,OP-Gab,,0,0,0,,{\q2}They gave me a ton of gems\N for that stupid server error,
-Dialogue: 0,0:00:15.52,0:00:18.61,OP-Satania,,0,0,0,,{\q2}Be grateful that you can\N breathe the same CO2 as me!
-Dialogue: 0,0:00:15.94,0:00:18.23,OP-Vigne,,0,0,0,,{\q2}Look, I'm a demon, so I'm acting\N demonic and doing my job.
-Dialogue: 0,0:00:15.94,0:00:17.81,OP-Raphi,,0,0,0,,{\q2}Would you care for\N some sugar water?
-Dialogue: 0,0:00:17.81,0:00:18.98,OP-Raphi,,0,0,0,,{\q2}What? You wouldn't?
-Dialogue: 0,0:00:18.11,0:00:20.07,OP-Gab,,0,0,0,,{\q2}so I'm good for now, but\N next month's gonna suck.
-Dialogue: 0,0:00:18.23,0:00:19.61,OP-Vigne,,0,0,0,,{\q2}Wait, am I?
-Dialogue: 0,0:00:18.61,0:00:20.07,OP-Satania,,0,0,0,,{\q2}What? What do you mean,\N I'm wrong? We breathe oxygen?
-Dialogue: 0,0:00:18.98,0:00:21.57,OP-Raphi,,0,0,0,,{\q2}I'm so sorry, you were a\N worker bee, not a worker ant!
-Dialogue: 0,0:00:19.61,0:00:21.57,OP-Vigne,,0,0,0,,{\q2}What does it mean to\N act demonic, anyway?
-Dialogue: 0,0:00:20.07,0:00:21.57,OP-Gab,,0,0,0,,{\q2}Dammit. Can't some money\N just fall from Heaven?
-Dialogue: 0,0:00:20.07,0:00:21.57,OP-Satania,,0,0,0,,{\q2}U-Um, well, we call\N it that in Hell!
-Dialogue: 0,0:00:21.57,0:00:24.44,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}netoge dake shitetai wa
-Dialogue: 0,0:00:21.57,0:00:24.44,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}All I wanna do is grind my MMOs
-Dialogue: 0,0:00:24.44,0:00:27.36,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}chotto heya kurai katadzukete
-Dialogue: 0,0:00:24.44,0:00:27.36,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}At least try to clean up your room!
-Dialogue: 0,0:00:27.36,0:00:30.16,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}kyou mo omocha wa genki da wa
-Dialogue: 0,0:00:27.36,0:00:30.16,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}My favorite toy is as lively as ever today
-Dialogue: 0,0:00:30.16,0:00:32.91,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}inu kowa yamete utaenai ja nai
-Dialogue: 0,0:00:30.16,0:00:32.91,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}A dog?! No! Stop it! I can't sing like this!
-Dialogue: 0,0:00:32.91,0:00:35.91,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}aa jinrui horobinai kana
-Dialogue: 0,0:00:32.91,0:00:35.91,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}Man, can't humanity just go to Hell?
-Dialogue: 0,0:00:35.91,0:00:38.83,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}tenshirashiku chanto yatte yo
-Dialogue: 0,0:00:35.91,0:00:38.83,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}At least try to act like an angel!
-Dialogue: 0,0:00:38.83,0:00:41.67,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}daiakumasama no odemashi desu
-Dialogue: 0,0:00:38.83,0:00:41.67,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}Hark! The Archdemon has arrived!
-Dialogue: 0,0:00:41.67,0:00:43.76,GabDro-OP,,0,0,0,,{\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}ware koso wa daiakuma
-Dialogue: 0,0:00:41.67,0:00:43.63,GabDro-OP,,0,0,0,,{\an2\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}I am the Archdemon
-Dialogue: 0,0:00:43.63,0:00:44.38,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Hey! You listening?!
-Dialogue: 0,0:00:43.76,0:00:44.38,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}tte kiiten no
-Dialogue: 0,0:00:44.38,0:00:45.97,GabDro-OP,,0,0,0,,{\fad(0,80)\blur2.667}guutara guutara tengoku da wa kore
-Dialogue: 0,0:00:44.38,0:00:45.97,GabDro-OP,,0,0,0,,{\an2\fad(0,80)\blur2.667}I can choose to snooze, this is what I call heaven
-Dialogue: 0,0:00:45.97,0:00:47.38,GabDro-OP,,0,0,0,,{\fad(80,80)\c&H8B284B&\3c&H4E59F1&\blur2.667}hito ni yasashiku jibun ni kibishiku
-Dialogue: 0,0:00:45.97,0:00:47.38,GabDro-OP,,0,0,0,,{\an2\fad(80,80)\c&H8B284B&\3c&H4E59F1&\blur2.667}Soft on others, hard on herself
-Dialogue: 0,0:00:47.38,0:00:48.89,GabDro-OP,,0,0,0,,{\fad(80,80)\blur2.667}akuma no you na tenshi no egao
-Dialogue: 0,0:00:47.38,0:00:48.89,GabDro-OP,,0,0,0,,{\an2\fad(80,80)\blur2.667}The smile of an angel almost like a demon
-Dialogue: 0,0:00:48.89,0:00:50.22,GabDro-OP,,0,0,0,,{\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}watashi wo dare dato omotteiru no yo
-Dialogue: 0,0:00:48.89,0:00:50.22,GabDro-OP,,0,0,0,,{\an2\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}Who the heck do you think I am?!
-Dialogue: 0,0:00:50.22,0:00:51.05,GabDro-OP,,0,0,0,,{\blur2.667}jouge kaiten
-Dialogue: 0,0:00:50.22,0:00:51.05,GabDro-OP,,0,0,0,,{\an2\blur2.667}Rolling now to cross the floor
-Dialogue: 0,0:00:51.05,0:00:51.68,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}tenma hanten
-Dialogue: 0,0:00:51.05,0:00:51.68,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}As an angel, you're done for
-Dialogue: 0,0:00:51.68,0:00:52.43,GabDro-OP,,0,0,0,,{\blur2.667}keisei gyakuten
-Dialogue: 0,0:00:51.68,0:00:52.43,GabDro-OP,,0,0,0,,{\an2\blur2.667}Look out for the trap door
-Dialogue: 0,0:00:52.43,0:00:53.14,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}kibou wa anten
-Dialogue: 0,0:00:52.43,0:00:53.14,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}One thing I'm living for
-Dialogue: 0,0:00:53.14,0:00:53.89,GabDro-OP,,0,0,0,,{\blur2.667}pride douten
-Dialogue: 0,0:00:53.14,0:00:53.89,GabDro-OP,,0,0,0,,{\an2\blur2.667}Pride? I had that once before
-Dialogue: 0,0:00:53.89,0:00:54.56,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}amame no saiten
-Dialogue: 0,0:00:53.89,0:00:54.56,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Easy judgment on the score
-Dialogue: 0,0:00:54.56,0:00:55.31,GabDro-OP,,0,0,0,,{\blur2.667}egao de manten
-Dialogue: 0,0:00:54.56,0:00:55.31,GabDro-OP,,0,0,0,,{\an2\blur2.667}A smile worth an encore
-Dialogue: 0,0:00:55.31,0:00:56.44,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}pashitte baiten
-Dialogue: 0,0:00:55.31,0:00:56.44,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Running to the store
-Dialogue: 0,0:00:56.44,0:00:58.69,GabDro-OP,,0,0,0,,{\blur2.667}torima JK da shi
-Dialogue: 0,0:00:56.44,0:00:58.69,GabDro-OP,,0,0,0,,{\an2\blur2.667}Like, I'm a high school girl
-Dialogue: 0,0:00:58.69,0:01:05.11,GabDro-OP,,0,0,0,,{\fad(0,200)\blur2.667}seifuku kitara ii kanji
-Dialogue: 0,0:00:58.69,0:01:05.11,GabDro-OP,,0,0,0,,{\an2\fad(0,200)\blur2.667}Put on my uniform and my job's done
-Dialogue: 0,0:01:05.94,0:01:09.74,GabDro-OP,,0,0,0,,{\fad(200,0)\blur2.667}people mo demon mo angel mo hikkurumete hai (happy)
-Dialogue: 0,0:01:05.94,0:01:07.90,GabDro-OP,,0,0,0,,{\an2\fad(200,150)\blur2.667}People and demons and angels
-Dialogue: 0,0:01:07.90,0:01:09.74,GabDro-OP,,0,0,0,,{\an2\fad(150,0)\blur2.667}Jumble them all up, and there (Happy!)
-Dialogue: 0,0:01:09.74,0:01:11.62,GabDro-OP,,0,0,0,,{\blur2.667}nandemo iin ja nai (fuu fuu)
-Dialogue: 0,0:01:09.74,0:01:11.62,GabDro-OP,,0,0,0,,{\an2\blur2.667}Whatever happens is fine (Woohoo!)
-Dialogue: 0,0:01:11.62,0:01:15.50,GabDro-OP,,0,0,0,,{\blur2.667}heaven mo hell mo earth mo gochamaze de hai (happy)
-Dialogue: 0,0:01:11.62,0:01:13.62,GabDro-OP,,0,0,0,,{\an2\fad(0,150)\blur2.667}Heaven and Hell and Earth
-Dialogue: 0,0:01:13.62,0:01:15.50,GabDro-OP,,0,0,0,,{\an2\fad(150,0)\blur2.667}Mix them all up, and there (Happy!)
-Dialogue: 0,0:01:15.50,0:01:17.37,GabDro-OP,,0,0,0,,{\blur2.667}minna de gakkou ikou (fuu)
-Dialogue: 0,0:01:15.50,0:01:17.37,GabDro-OP,,0,0,0,,{\an2\blur2.667}Let's all go to school (Woo!)
-Dialogue: 0,0:01:17.37,0:01:18.67,GabDro-OP,,0,0,0,,{\blur2.667}sukkoronde wa (wa)
-Dialogue: 0,0:01:17.37,0:01:18.67,GabDro-OP,,0,0,0,,{\an2\blur2.667}Trip up and fall (Yeah!)
-Dialogue: 0,0:01:18.67,0:01:20.13,GabDro-OP,,0,0,0,,{\blur2.667}donaubette wa (wa)
-Dialogue: 0,0:01:18.67,0:01:20.13,GabDro-OP,,0,0,0,,{\an2\blur2.667}Roll into the wall (Yeah!)
-Dialogue: 0,0:01:20.13,0:01:21.63,GabDro-OP,,0,0,0,,{\blur2.667}uei (uei) uei (uei)
-Dialogue: 0,0:01:20.13,0:01:21.63,GabDro-OP,,0,0,0,,{\an2\blur2.667}Yay! (Yay!) Yay! (Yay!)
-Dialogue: 0,0:01:23.38,0:01:27.17,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}datte tenshi desu mono
-Dialogue: 0,0:01:23.38,0:01:27.17,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}I'm an angel, you know
-Dialogue: 0,0:00:00.00,0:00:04.11,Default,,0,0,0,,
+
+Dialogue: 0,0:00:03.98,0:00:06.86,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}tenshi no hane hirogete
+Dialogue: 0,0:00:03.98,0:00:06.86,GabDro-OP,,0,0,0,,{\an2\fad(200,80)\blur2.667}I'll spread wide my angel's wings
+Dialogue: 0,0:00:06.86,0:00:10.95,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}minna ni shukufuku wo
+Dialogue: 0,0:00:06.86,0:00:10.95,GabDro-OP,,0,0,0,,{\an2\fad(80,200)\blur2.667}And deliver joy and peace to the world
+Dialogue: 0,0:00:10.95,0:00:12.41,OP-Gab,,0,0,0,,{\q2}Man, singing's effort.
+Dialogue: 0,0:00:10.95,0:00:14.16,OP-Vigne,,0,0,0,,{\q2}Will you snap out of it already?!\N You're an angel!
+Dialogue: 0,0:00:10.95,0:00:12.86,OP-Satania,,0,0,0,,{\q2}Muahahaha!
+Dialogue: 0,0:00:10.95,0:00:13.86,OP-Raphi,,0,0,0,,{\q2}Isn't the weather heavenly\N today? Good day, everyone.
+Dialogue: 0,0:00:12.41,0:00:14.45,OP-Gab,,0,0,0,,{\q2}Can't someone do it for\N me for, like, 10 yen?
+Dialogue: 0,0:00:12.86,0:00:16.41,OP-Satania,,0,0,0,,{\q2}I am the ultimate archdemon!\N My name shakes the heavens!
+Dialogue: 0,0:00:13.86,0:00:16.83,OP-Raphi,,0,0,0,,{\q2\fscx98}You look so exhilarated, studying\N and working like worker ants.
+Dialogue: 0,0:00:14.16,0:00:16.83,OP-Vigne,,0,0,0,,{\q2}So start acting angelic\N and do your job!
+Dialogue: 0,0:00:14.45,0:00:16.41,OP-Gab,,0,0,0,,{\q2}I microtransactioned\N too hard, so I'm broke.
+Dialogue: 0,0:00:16.41,0:00:19.00,OP-Gab,,0,0,0,,{\q2}They gave me a ton of gems\N for that stupid server error,
+Dialogue: 0,0:00:16.41,0:00:19.50,OP-Satania,,0,0,0,,{\q2}Be grateful that you can\N breathe the same CO2 as me!
+Dialogue: 0,0:00:16.83,0:00:19.12,OP-Vigne,,0,0,0,,{\q2}Look, I'm a demon, so I'm acting\N demonic and doing my job.
+Dialogue: 0,0:00:16.83,0:00:18.70,OP-Raphi,,0,0,0,,{\q2}Would you care for\N some sugar water?
+Dialogue: 0,0:00:18.70,0:00:19.87,OP-Raphi,,0,0,0,,{\q2}What? You wouldn't?
+Dialogue: 0,0:00:19.00,0:00:20.96,OP-Gab,,0,0,0,,{\q2}so I'm good for now, but\N next month's gonna suck.
+Dialogue: 0,0:00:19.12,0:00:20.50,OP-Vigne,,0,0,0,,{\q2}Wait, am I?
+Dialogue: 0,0:00:19.50,0:00:20.96,OP-Satania,,0,0,0,,{\q2}What? What do you mean,\N I'm wrong? We breathe oxygen?
+Dialogue: 0,0:00:19.87,0:00:22.46,OP-Raphi,,0,0,0,,{\q2}I'm so sorry, you were a\N worker bee, not a worker ant!
+Dialogue: 0,0:00:20.50,0:00:22.46,OP-Vigne,,0,0,0,,{\q2}What does it mean to\N act demonic, anyway?
+Dialogue: 0,0:00:20.96,0:00:22.46,OP-Gab,,0,0,0,,{\q2}Dammit. Can't some money\N just fall from Heaven?
+Dialogue: 0,0:00:20.96,0:00:22.46,OP-Satania,,0,0,0,,{\q2}U-Um, well, we call\N it that in Hell!
+Dialogue: 0,0:00:22.46,0:00:25.33,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}netoge dake shitetai wa
+Dialogue: 0,0:00:22.46,0:00:25.33,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}All I wanna do is grind my MMOs
+Dialogue: 0,0:00:25.33,0:00:28.25,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}chotto heya kurai katadzukete
+Dialogue: 0,0:00:25.33,0:00:28.25,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}At least try to clean up your room!
+Dialogue: 0,0:00:28.25,0:00:31.05,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}kyou mo omocha wa genki da wa
+Dialogue: 0,0:00:28.25,0:00:31.05,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}My favorite toy is as lively as ever today
+Dialogue: 0,0:00:31.05,0:00:33.80,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}inu kowa yamete utaenai ja nai
+Dialogue: 0,0:00:31.05,0:00:33.80,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}A dog?! No! Stop it! I can't sing like this!
+Dialogue: 0,0:00:33.80,0:00:36.80,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}aa jinrui horobinai kana
+Dialogue: 0,0:00:33.80,0:00:36.80,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}Man, can't humanity just go to Hell?
+Dialogue: 0,0:00:36.80,0:00:39.72,GabDro-OP,,0,0,0,,{\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}tenshirashiku chanto yatte yo
+Dialogue: 0,0:00:36.80,0:00:39.72,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\c&H8B284B&\3c&H4E59F1&\blur2.667}At least try to act like an angel!
+Dialogue: 0,0:00:39.72,0:00:42.56,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}daiakumasama no odemashi desu
+Dialogue: 0,0:00:39.72,0:00:42.56,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}Hark! The Archdemon has arrived!
+Dialogue: 0,0:00:42.56,0:00:44.65,GabDro-OP,,0,0,0,,{\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}ware koso wa daiakuma
+Dialogue: 0,0:00:42.56,0:00:44.52,GabDro-OP,,0,0,0,,{\an2\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}I am the Archdemon
+Dialogue: 0,0:00:44.52,0:00:45.27,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Hey! You listening?!
+Dialogue: 0,0:00:44.65,0:00:45.27,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}tte kiiten no
+Dialogue: 0,0:00:45.27,0:00:46.86,GabDro-OP,,0,0,0,,{\fad(0,80)\blur2.667}guutara guutara tengoku da wa kore
+Dialogue: 0,0:00:45.27,0:00:46.86,GabDro-OP,,0,0,0,,{\an2\fad(0,80)\blur2.667}I can choose to snooze, this is what I call heaven
+Dialogue: 0,0:00:46.86,0:00:48.27,GabDro-OP,,0,0,0,,{\fad(80,80)\c&H8B284B&\3c&H4E59F1&\blur2.667}hito ni yasashiku jibun ni kibishiku
+Dialogue: 0,0:00:46.86,0:00:48.27,GabDro-OP,,0,0,0,,{\an2\fad(80,80)\c&H8B284B&\3c&H4E59F1&\blur2.667}Soft on others, hard on herself
+Dialogue: 0,0:00:48.27,0:00:49.78,GabDro-OP,,0,0,0,,{\fad(80,80)\blur2.667}akuma no you na tenshi no egao
+Dialogue: 0,0:00:48.27,0:00:49.78,GabDro-OP,,0,0,0,,{\an2\fad(80,80)\blur2.667}The smile of an angel almost like a demon
+Dialogue: 0,0:00:49.78,0:00:51.11,GabDro-OP,,0,0,0,,{\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}watashi wo dare dato omotteiru no yo
+Dialogue: 0,0:00:49.78,0:00:51.11,GabDro-OP,,0,0,0,,{\an2\fad(80,0)\c&H8B284B&\3c&H4E59F1&\blur2.667}Who the heck do you think I am?!
+Dialogue: 0,0:00:51.11,0:00:51.94,GabDro-OP,,0,0,0,,{\blur2.667}jouge kaiten
+Dialogue: 0,0:00:51.11,0:00:51.94,GabDro-OP,,0,0,0,,{\an2\blur2.667}Rolling now to cross the floor
+Dialogue: 0,0:00:51.94,0:00:52.57,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}tenma hanten
+Dialogue: 0,0:00:51.94,0:00:52.57,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}As an angel, you're done for
+Dialogue: 0,0:00:52.57,0:00:53.32,GabDro-OP,,0,0,0,,{\blur2.667}keisei gyakuten
+Dialogue: 0,0:00:52.57,0:00:53.32,GabDro-OP,,0,0,0,,{\an2\blur2.667}Look out for the trap door
+Dialogue: 0,0:00:53.32,0:00:54.03,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}kibou wa anten
+Dialogue: 0,0:00:53.32,0:00:54.03,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}One thing I'm living for
+Dialogue: 0,0:00:54.03,0:00:54.78,GabDro-OP,,0,0,0,,{\blur2.667}pride douten
+Dialogue: 0,0:00:54.03,0:00:54.78,GabDro-OP,,0,0,0,,{\an2\blur2.667}Pride? I had that once before
+Dialogue: 0,0:00:54.78,0:00:55.45,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}amame no saiten
+Dialogue: 0,0:00:54.78,0:00:55.45,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Easy judgment on the score
+Dialogue: 0,0:00:55.45,0:00:56.20,GabDro-OP,,0,0,0,,{\blur2.667}egao de manten
+Dialogue: 0,0:00:55.45,0:00:56.20,GabDro-OP,,0,0,0,,{\an2\blur2.667}A smile worth an encore
+Dialogue: 0,0:00:56.20,0:00:57.33,GabDro-OP,,0,0,0,,{\c&H8B284B&\3c&H4E59F1&\blur2.667}pashitte baiten
+Dialogue: 0,0:00:56.20,0:00:57.33,GabDro-OP,,0,0,0,,{\an2\c&H8B284B&\3c&H4E59F1&\blur2.667}Running to the store
+Dialogue: 0,0:00:57.33,0:00:59.58,GabDro-OP,,0,0,0,,{\blur2.667}torima JK da shi
+Dialogue: 0,0:00:57.33,0:00:59.58,GabDro-OP,,0,0,0,,{\an2\blur2.667}Like, I'm a high school girl
+Dialogue: 0,0:00:59.58,0:01:06.00,GabDro-OP,,0,0,0,,{\fad(0,200)\blur2.667}seifuku kitara ii kanji
+Dialogue: 0,0:00:59.58,0:01:06.00,GabDro-OP,,0,0,0,,{\an2\fad(0,200)\blur2.667}Put on my uniform and my job's done
+Dialogue: 0,0:01:06.83,0:01:10.63,GabDro-OP,,0,0,0,,{\fad(200,0)\blur2.667}people mo demon mo angel mo hikkurumete hai (happy)
+Dialogue: 0,0:01:06.83,0:01:08.79,GabDro-OP,,0,0,0,,{\an2\fad(200,150)\blur2.667}People and demons and angels
+Dialogue: 0,0:01:08.79,0:01:10.63,GabDro-OP,,0,0,0,,{\an2\fad(150,0)\blur2.667}Jumble them all up, and there (Happy!)
+Dialogue: 0,0:01:10.63,0:01:12.51,GabDro-OP,,0,0,0,,{\blur2.667}nandemo iin ja nai (fuu fuu)
+Dialogue: 0,0:01:10.63,0:01:12.51,GabDro-OP,,0,0,0,,{\an2\blur2.667}Whatever happens is fine (Woohoo!)
+Dialogue: 0,0:01:12.51,0:01:16.39,GabDro-OP,,0,0,0,,{\blur2.667}heaven mo hell mo earth mo gochamaze de hai (happy)
+Dialogue: 0,0:01:12.51,0:01:14.51,GabDro-OP,,0,0,0,,{\an2\fad(0,150)\blur2.667}Heaven and Hell and Earth
+Dialogue: 0,0:01:14.51,0:01:16.39,GabDro-OP,,0,0,0,,{\an2\fad(150,0)\blur2.667}Mix them all up, and there (Happy!)
+Dialogue: 0,0:01:16.39,0:01:18.26,GabDro-OP,,0,0,0,,{\blur2.667}minna de gakkou ikou (fuu)
+Dialogue: 0,0:01:16.39,0:01:18.26,GabDro-OP,,0,0,0,,{\an2\blur2.667}Let's all go to school (Woo!)
+Dialogue: 0,0:01:18.26,0:01:19.56,GabDro-OP,,0,0,0,,{\blur2.667}sukkoronde wa (wa)
+Dialogue: 0,0:01:18.26,0:01:19.56,GabDro-OP,,0,0,0,,{\an2\blur2.667}Trip up and fall (Yeah!)
+Dialogue: 0,0:01:19.56,0:01:21.02,GabDro-OP,,0,0,0,,{\blur2.667}donaubette wa (wa)
+Dialogue: 0,0:01:19.56,0:01:21.02,GabDro-OP,,0,0,0,,{\an2\blur2.667}Roll into the wall (Yeah!)
+Dialogue: 0,0:01:21.02,0:01:22.52,GabDro-OP,,0,0,0,,{\blur2.667}uei (uei) uei (uei)
+Dialogue: 0,0:01:21.02,0:01:22.52,GabDro-OP,,0,0,0,,{\an2\blur2.667}Yay! (Yay!) Yay! (Yay!)
+Dialogue: 0,0:01:24.27,0:01:28.06,GabDro-OP,,0,0,0,,{\fad(200,200)\blur2.667}datte tenshi desu mono
+Dialogue: 0,0:01:24.27,0:01:28.06,GabDro-OP,,0,0,0,,{\an2\fad(200,200)\blur2.667}I'm an angel, you know
+Dialogue: 0,0:00:00.00,0:00:05.00,Default,,0,0,0,,
