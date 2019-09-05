@@ -54,14 +54,12 @@
   <script src='https://vjs.zencdn.net/7.4.1/video.js' onload="setup()"></script>
   </div>
 <div class="container d-flex justify-content-center subButton col-xl-2">
+  <button class="btn btn-primary" onClick="changeVideoOP()">Opening</button>
   	 <select class="form-control input-group" id="subactive" onChange="toggleSubtitles()">
   <option>Lyrics</option>
   <option>None</option>
 </select>
+<button class="btn btn-primary" onClick="changeVideoED()">Ending</button>
 	</div>
-  <div class="container d-flex justify-content-between subButton">
-  	<button class="btn btn-primary" onClick="changeVideoOP()">Opening</button>
-  	<button class="btn btn-primary" onClick="changeVideoED()">Ending</button>
-  </div>
    </body>
 </html>
