@@ -28,7 +28,7 @@
                <a class="nav-item nav-link" href="../read">Read </a>
                <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Openings
+          OP/ED
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="../mikakunin">Engaged to the Unidentified</a>
@@ -54,7 +54,7 @@
   <script src='https://vjs.zencdn.net/7.4.1/video.js' onload="setup()"></script>
   </div>
 
-  	<div class="container d-flex justify-content-center subButton col-2">
+  	<div class="container d-flex justify-content-center subButton col-xl-2">
   	 <select class="form-control input-group" id="subactive" onChange="toggleSubtitles()">
   <option>Lyrics</option>
   <option>Credits</option>
@@ -63,5 +63,9 @@
   <option>None</option>
 </select>
 	</div>
+  <div class="container d-flex justify-content-between subButton">
+  	<button class="btn btn-primary" onClick="changeVideoOP()">Opening</button>
+  	<button class="btn btn-primary" onClick="changeVideoED()">Ending</button>
+  </div>
    </body>
 </html>
