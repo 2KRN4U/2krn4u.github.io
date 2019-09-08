@@ -11,4 +11,6 @@ function main() {
 	document.getElementById("multi").innerHTML += num1*num2;
 	document.getElementById("divide").innerHTML = num1 + " / " + num2 + " = ";
 	document.getElementById("divide").innerHTML += num1/num2;
+	document.getElementById("remain").innerHTML = num1 + " % " + num2 + " = ";
+	document.getElementById("remain").innerHTML += num1%num2;
 }
