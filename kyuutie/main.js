@@ -111,8 +111,8 @@ function changeVideoOP() {
 		document.getElementById("subactive").innerHTML = "<option>Lyrics</option><option>Credits</option><option>Lyrics | Credits</option><option value=\"kashi\">歌詞</option><option>None</option>";
 		updateMetadata();
 		curVid = 0;
-		toggleSubtitles();
 		videojsPlayer.play();
+		toggleSubtitles();
     }
 }
 
@@ -125,7 +125,7 @@ function changeVideoED() {
 		document.getElementById("subactive").innerHTML = "<option>Lyrics</option><option value=\"kashi\">歌詞</option><option>None</option>";
 		updateMetadata();
 		curVid = 1;
-		toggleSubtitles();
 		videojsPlayer.play();
+		toggleSubtitles();
     }
 }
