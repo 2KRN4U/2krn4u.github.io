@@ -28,12 +28,13 @@
                <a class="nav-item nav-link" href="../read">Read </a>
                <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Openings
+          OP/ED
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="../mikakunin">Engaged to the Unidentified</a>
           <a class="dropdown-item" href="../dropkick">Gabriel Dropout</a>
-          <a class="dropdown-item" href="../chuchuyeah">Miss Kobayashi's Dragon Maid</a>
+          <a class="dropdown-item active" href="../chuchuyeah">Miss Kobayashi's Dragon Maid</a>
+          <a class="dropdown-item" href="../kyutie">Ms. vampire who lives in my neighborhood.</a>
         </div>
       </li>
             </div>
@@ -43,7 +44,7 @@
         <div class="videocontent">
         <video id='video' class='video-js vjs-big-play-centered' controls preload='auto' width='1280' height='720'
   poster='pic.jpg' data-setup='{"fluid": true}'>
-    <source src="https://openings.moe/video/Kobayashi-SanChiNoMaidDragon-OP01-NCBD.webm" type='video/mp4'>
+    <source src="https://animethemes.moe/video/KobayashiSanChiNoMaidDragon-OP1-NCBD1080.webm" type='video/mp4'>
     <p class='vjs-no-js'>
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
@@ -52,8 +53,13 @@
 </div>
   <script src='https://vjs.zencdn.net/7.4.1/video.js' onload="setup()"></script>
   </div>
-  	<div class="d-flex justify-content-center subButton">
-		<button onClick="toggleSubtitles()" class="btn btn-primary">Toggle Subtitles</button>
+<div class="container d-flex justify-content-center subButton col-xl-2">
+  <button class="btn btn-primary" onClick="changeVideoOP()">Opening</button>
+  	 <select class="form-control input-group" id="subactive" onChange="toggleSubtitles()">
+  <option>Lyrics</option>
+  <option>None</option>
+</select>
+<button class="btn btn-primary" onClick="changeVideoED()">Ending</button>
 	</div>
    </body>
 </html>
