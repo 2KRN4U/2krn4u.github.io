@@ -15,7 +15,7 @@ function setup() {
             var options = {
                 video: video,
                 subUrl: track,
-                fonts: ['Advert-Bold.otf', 'Raleigh Bold BT.ttf'],
+                fonts: ['adb.otf', 'rbt.ttf'],
                 //onReady: onReadyFunction,
                 //debug: true,
                 workerUrl: 'subtitles-octopus-worker.js'
