@@ -105,7 +105,7 @@ function updateMetadata() {
 function changeVideoOP() {
     if (curVid == 1) {
         curTitle = '†吸tie Ladies†';
-		document.title = "†Kyuutie Ladies† | †吸tie Ladies†";
+		document.title = "†Kyutie Ladies† | †吸tie Ladies†";
         videojsPlayer.src("https://animethemes.moe/video/TonariNoKyuuketsukiSan-OP1-NCBD1080.webm");
 		document.getElementById("subactive").innerHTML = "";
 		document.getElementById("subactive").innerHTML = "<option>Lyrics</option><option>Credits</option><option>Lyrics | Credits</option><option value=\"kashi\">歌詞</option><option>None</option>";
