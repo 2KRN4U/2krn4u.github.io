@@ -35,7 +35,7 @@ function createHTML() {
 }
 
 function searching() {
-    document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\">"
+    document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\"><h1>Now Loading</h1>"
     let searchq = document.getElementById("malsearch").value;
     searchq = searchq.toLowerCase();
     if (document.getElementById("animeactive").value === "Anime") {
@@ -58,7 +58,7 @@ function searching() {
 
 function searching2(e) {
     if (e.keyCode === 13) {
-        document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\">"
+        document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\"><h1>Now Loading</h1>"
         let searchq = document.getElementById("malsearch").value;
         searchq = searchq.toLowerCase();
         if (document.getElementById("animeactive").value === "Anime") {
@@ -70,6 +70,7 @@ function searching2(e) {
             });
         } else if (document.getElementById("animeactive").value === "Manga/Light Novel") {
             $.getJSON('https://api.jikan.moe/v3/search/manga?q=' + searchq + '&limit=6', function(results) {
+
                 searchjson = results;
                 animeArrSort = [];
                 animeArr = [];
@@ -81,7 +82,11 @@ function searching2(e) {
 }
 let q = 0
 
-function searched() {
+function timer(ms) {
+ return new Promise(res => setTimeout(res, ms));
+}
+
+async function searched() {
     searchjson = searchjson.results
     for (let i = 0; i < searchjson.length; i++) {
         $.getJSON('https://api.jikan.moe/v3/anime/' + searchjson[i].mal_id, function(jsonresult) {
@@ -128,11 +133,12 @@ function searched() {
                 q = 0;
             }
         });
+        await timer(1000);
     }
 
 }
 
-function searched2() {
+async function searched2() {
     searchjson = searchjson.results
     for (let i = 0; i < searchjson.length; i++) {
         $.getJSON('https://api.jikan.moe/v3/manga/' + searchjson[i].mal_id, function(jsonresult) {
@@ -179,6 +185,7 @@ function searched2() {
                 q = 0
             }
         });
+        await timer(1000);
     }
 
 }
