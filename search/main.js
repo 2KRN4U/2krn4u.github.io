@@ -29,13 +29,13 @@ function CreateManga(name, japanese, desc, mal, cover, genre, eps, type) {
 function createHTML() {
     document.getElementById("animesearch").innerHTML = "";
     for (let i = 0; i < animeArrSort.length; i++) {
-        document.getElementById("animesearch").innerHTML += "<div class=\"col-sm\"><div class=\"card\" style=\"width: 18rem;\"><img class=\"card-img-top\" src=\"" + animeArrSort[i].cover + "\" alt=\"" + animeArrSort[i].name + "\" height=\"100%\" width=\"100%\"><div class=\"card-body\"><h2 class=\"card-title\">" + animeArrSort[i].name + "</h2><h4 class=\"card-title\">" + animeArrSort[i].japanese + "</h4><h6 class=\"card-subtitle genres\">" + animeArrSort[i].genre + "</h6><p class=\"description\">" + animeArrSort[i].desc + "</p><h6>Episodes: " + animeArrSort[i].eps + "</h6><a href=\"" + animeArrSort[i].mal + "\" class=\"btn btn-primary\" target=\"_blank\">MAL</a></div></div></div>"
+        document.getElementById("animesearch").innerHTML += "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + animeArrSort[i]["cover"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + animeArrSort[i]["name"] + "</h4><h5 class=\"card-title alttitle\">" + animeArrSort[i]["japanese"] + "</h5><h5 class=\"card-title alttitle\">" + animeArrSort[i]["genre"] + "</h5><p class=\"card-text description\">" + animeArrSort[i]["desc"] + "<h6>Episodes: " + animeArrSort[i]["eps"] + "</h6></p><a href=\"" + animeArrSort[i]["mal"] + "\" class=\"btn btn-primary\">MAL</a></div></div></div></div></div>";
 
     }
 }
 
 function searching() {
-    document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\"><h1>Now Loading</h1>"
+    document.getElementById("animesearch").innerHTML = "<h1>Now Loading</h1><br><img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\">"
     let searchq = document.getElementById("malsearch").value;
     searchq = searchq.toLowerCase();
     if (document.getElementById("animeactive").value === "Anime") {
@@ -58,7 +58,7 @@ function searching() {
 
 function searching2(e) {
     if (e.keyCode === 13) {
-        document.getElementById("animesearch").innerHTML = "<img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\"><h1>Now Loading</h1>"
+        document.getElementById("animesearch").innerHTML = "<h1>Now Loading</h1><br><img src=\"https://i2.kym-cdn.com/photos/images/original/001/102/419/e94.gif\">"
         let searchq = document.getElementById("malsearch").value;
         searchq = searchq.toLowerCase();
         if (document.getElementById("animeactive").value === "Anime") {
@@ -193,7 +193,7 @@ async function searched2() {
 function createHTML2() {
     document.getElementById("animesearch").innerHTML = "";
     for (let i = 0; i < animeArrSort.length; i++) {
-        document.getElementById("animesearch").innerHTML += "<div class=\"col-sm\"><div class=\"card\" style=\"width: 18rem;\"><img class=\"card-img-top\" src=\"" + animeArrSort[i].cover + "\" alt=\"" + animeArrSort[i].name + "\" height=\"100%\" width=\"100%\"><div class=\"card-body\"><h2 class=\"card-title\">" + animeArrSort[i].name + "</h2><h4 class=\"card-title\">" + animeArrSort[i].japanese + "</h4><h6 class=\"card-subtitle genres\">" + animeArrSort[i].genre + "</h6><h6 class=\"card-subtitle \">Type: " + animeArrSort[i].type + "</h6><p class=\"description\">" + animeArrSort[i].desc + "</p><h6>Chapters: " + animeArrSort[i].eps + "</h6><a href=\"" + animeArrSort[i].mal + "\" class=\"btn btn-primary\" target=\"_blank\">MAL</a></div></div></div>"
+        document.getElementById("animesearch").innerHTML += "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + animeArrSort[i]["cover"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + animeArrSort[i]["name"] + "</h4><h5 class=\"card-title alttitle\">" + animeArrSort[i]["japanese"] + "</h5><h5 class=\"card-title alttitle\">" + animeArrSort[i]["genre"] + "</h5><h5 class=\"card-title alttitle\">" + animeArrSort[i]["type"] + "</h5><p class=\"card-text description\">" + animeArrSort[i]["desc"] + "<h6>Chapters: " + animeArrSort[i]["eps"] + "</h6></p><a href=\"" + animeArrSort[i]["mal"] + "\" class=\"btn btn-primary\">MAL</a></div></div></div></div></div>";
 
     }
 }
