@@ -15,21 +15,13 @@ Original Timing: Owningmatt93
 Script Updated By: Owningmatt93
 Update Details: See site for full staff listing
 
-[Aegisub Project Garbage]
-Last Style Storage: Default
-Audio File: koba.mp4
-Video File: koba.mp4
-Video AR Mode: 4
-Video AR Value: 1.777778
-Video Zoom Percent: 0.250000
-Active Line: 3
-Video Position: 32
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: OP01 Romaji,Advert-Bold,75,&H00000000,&H0031AA50,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,8,50,50,37,1
 Style: OP01 English,Advert-Bold,60,&H00000000,&H0031AA50,&H00FFFFFF,&H00000000,-1,0,0,0,100,100,0,0,1,2,0,8,50,50,118,1
 Style: Signs - OP,,100,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Signs,,100,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

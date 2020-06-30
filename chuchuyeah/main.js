@@ -9,18 +9,18 @@ var curVid = 0;
 
 function setup() {
 	videojs('video').ready(function () {
-        // This would look more nice as a plugin but is's just as showcase of using with custom players
+
         var video = this.tech_.el_;
         window.SubtitlesOctopusOnLoad = function () {
             var options = {
                 video: video,
                 subUrl: track,
-                fonts: ['adb.otf', 'rbt.ttf'],
+                fonts: ['fonts/adb.otf', 'fonts/AltonaBold.otf', 'fonts/ARISTON1.TTF', 'fonts/comicbd.ttf', 'fonts/eirm.ttf', 'fonts/HWYGWDE.TTF', 'fonts/lexib.TTF', 'fonts/OLDENGL.TTF', 'fonts/oot.ttf', 'fonts/Retropop.otf', 'fonts/sr.ttf', 'fonts/sfab.ttf', 'fonts/sfjc.ttf', 'fonts/sb.ttf', 'fonts/Splash.ttf', 'fonts/URWAlcuinT.ttf', 'fonts/arial.ttf', 'fonts/armtb.ttf', 'fonts/BlambotPro.ttf', 'fonts/ccz.ttf', 'fonts/CoreRhino35Light.otf', 'fonts/fp.otf', 'fonts/fr1.ttf', 'fonts/rbt.ttf', 'fonts/rh.ttf'],
                 //onReady: onReadyFunction,
                 //debug: true,
                 workerUrl: 'subtitles-octopus-worker.js'
             };
-            window.octopusInstance = new SubtitlesOctopus(options); // You can experiment in console
+            window.octopusInstance = new SubtitlesOctopus(options);
         };
         if (SubtitlesOctopus) {
             SubtitlesOctopusOnLoad();
