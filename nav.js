@@ -12,6 +12,8 @@ let navRead = "<a class=\"nav-item nav-link\" href=\"../read\">Read </a> ";
 
 let navSecret = "<a class=\"nav-item nav-link\" href=\"../secret\">Shows for Brandon | Secret</a>";
 
+let navPlex = "<a class=\"nav-item nav-link\" href=\"../plex\">Plex Schedule</a>"
+
 let navOPEDDropDownStart = "<li class=\"nav-item dropdown\"> <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> OP/ED </a> <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\"> ";
 
 let navDropDownItems = ["<a class=\"dropdown-item\" href=\"../mikakunin\">Engaged to the Unidentified</a> ", "<a class=\"dropdown-item\" href=\"../dropkick\">Gabriel Dropout</a> ", "<a class=\"dropdown-item\" href=\"../chuchuyeah\">Miss Kobayashi\'s Dragon Maid</a> ", "<a class=\"dropdown-item\" href=\"../kyutie\">Ms. vampire who lives in my neighborhood.</a> "];
@@ -60,9 +62,9 @@ function createNav(){
 		
 	}
 	if (document.title == "Shows for Brandon | Secret"){
-		navBar = navStart + navSearch + navWh + navRead + navSecret + navOPEDDropDownStart;
+		navBar = navStart + navSearch + navWh + navRead + navPlex + navSecret + navOPEDDropDownStart;
 	} else {
-		navBar = navStart + navSearch + navWh + navRead + navOPEDDropDownStart;
+		navBar = navStart + navSearch + navWh + navRead + navPlex + navOPEDDropDownStart;
 	}
 
 	for (let i = 0; i < navDropDownItems.length; i++){
