@@ -7,6 +7,7 @@ $.ajax({
 	success: function(data){
 		shows = data;
 		shows.sort((a, b) => (a.en_name > b.en_name ? 1 : -1));
+		createShows();
       }
 });
 
