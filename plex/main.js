@@ -11,8 +11,28 @@ $.ajax({
       }
 });
 
+function sortBy(){
+	if (document.getElementById("sortid").value === "Sort by:"){
+		return;
+	}
+	for (let i = 0; i < shows.length; i++){
+		clearInterval(shows[i]["interval"]);
+	}
+	
+	if (document.getElementById("sortid").value === "Name"){
+		shows.sort((a, b) => (a.en_name > b.en_name ? 1 : -1));
+		createShows();
+	} else if (document.getElementById("sortid").value === "Countdown"){
+		shows.sort((a, b) => (a.distance > b.distance ? 1 : -1));
+		createShows();
+	}
+}
+
+/*<select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option>Name</option> <option>Countdown</option>*/
+
 function createShows(){
-	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\">Summer 2020</h3>";
+	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\">Summer 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option>Sort by:</option><option>Name</option> <option>Countdown</option>";
+
 	for (let i = 0; i < shows.length; i++){
 		document.getElementById("animelist").innerHTML += "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + shows[i]["img_link"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + shows[i]["en_name"] + "</h4><h5 class=\"card-title alttitle\">" + shows[i]["romaji"] + "</h5><h5 class=\"card-title alttitle\">" + shows[i]["jp_name"] + "</h5><p class=\"card-text description\">" + shows[i]["desc"] + "</p><h5>Episodes: " + shows[i]["episodes"] + "</h5><h5 id=\"show" + i + "\"></h5></div></div></div></div></div>";
 		
@@ -20,13 +40,13 @@ function createShows(){
 		var endTime = Date.parse(shows[i]["end_date"]);
 		var episodes = shows[i]["episodes"];
 		
-		startInterval(i, startTime, endTime, episodes);
+		shows[i]["interval"] = startInterval(i, startTime, endTime, episodes);
 		
 	}
 }
 
 function startInterval(i, startTime, endTime, episodes){
-	setInterval(function() {
+	return setInterval(function() {
 			let curDate = Date.now();
 			if (curDate > startTime && endTime > curDate){
 				let newDate;
@@ -75,8 +95,9 @@ function startInterval(i, startTime, endTime, episodes){
 				} else {
 					statement += " second";
 				}
-
+				shows[i]["distance"] = distance;
 				document.getElementById("show" + i).innerHTML = statement;
+				
 
 			} else if (curDate < startTime) {
 				let distance = startTime - curDate;
@@ -117,7 +138,7 @@ function startInterval(i, startTime, endTime, episodes){
 				} else {
 					statement += " second";
 				}
-
+				shows[i]["distance"] = distance;
 				document.getElementById("show" + i).innerHTML = statement;
 
 			} else if (curDate > endTime) {
