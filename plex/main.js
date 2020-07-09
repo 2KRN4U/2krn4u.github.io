@@ -36,7 +36,13 @@ function createShows(){
 	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\">Summer 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option disabled>Sort by:</option><option value=\"Name\">Name</option> <option value=\"Countdown\">Countdown</option>";
 
 	for (let i = 0; i < shows.length; i++){
-		document.getElementById("animelist").innerHTML += "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + shows[i]["img_link"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + shows[i]["en_name"] + "</h4><h5 class=\"card-title alttitle\">" + shows[i]["romaji"] + "</h5><h5 class=\"card-title alttitle\">" + shows[i]["jp_name"] + "</h5><p class=\"card-text description\">" + shows[i]["desc"] + "</p><h5>Episodes: " + shows[i]["episodes"] + "</h5><h5 id=\"show" + i + "\"></h5></div></div></div></div></div>";
+		let base = "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + shows[i]["img_link"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + shows[i]["en_name"] + "</h4><h5 class=\"card-title alttitle\">" + shows[i]["romaji"] + "</h5><h5 class=\"card-title alttitle\">" + shows[i]["jp_name"] + "</h5><p class=\"card-text description\">" + shows[i]["desc"] + "</p><h5>Episodes: ";
+		
+		if (shows[i]["ep_unknown"] == "true") {
+			document.getElementById("animelist").innerHTML += base + "N/A" + "</h5><h5 id=\"show" + i + "\"></h5></div></div></div></div></div>";
+		} else {
+			document.getElementById("animelist").innerHTML += base + shows[i]["episodes"] + "</h5><h5 id=\"show" + i + "\"></h5></div></div></div></div></div>";
+		}
 		
 		var startTime = Date.parse(shows[i]["start_date"]);
 		var endTime = Date.parse(shows[i]["end_date"]);
