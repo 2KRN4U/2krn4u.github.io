@@ -51,6 +51,8 @@ function createShows(){
 		shows[i]["interval"] = startInterval(i, startTime, endTime, episodes);
 		
 	}
+	
+	spoilerAlert('spoiler, .spoiler', {max: 5, partial: 3});
 }
 
 function startInterval(i, startTime, endTime, episodes){
