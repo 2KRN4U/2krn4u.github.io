@@ -47,7 +47,7 @@ function createShows(){
 		var startTime = Date.parse(shows[i]["start_date"]);
 		var endTime = Date.parse(shows[i]["end_date"]);
 		var episodes = shows[i]["episodes"];
-		
+		timer(i, startTime, endTime, episodes);
 		shows[i]["interval"] = startInterval(i, startTime, endTime, episodes);
 		
 	}
@@ -57,7 +57,12 @@ function createShows(){
 
 function startInterval(i, startTime, endTime, episodes){
 	return setInterval(function() {
-			let curDate = Date.now();
+			timer(i, startTime, endTime, episodes);
+		}, 1000);
+}
+
+function timer(i, startTime, endTime, episodes){
+	let curDate = Date.now();
 			if (curDate > startTime && endTime > curDate){
 				let newDate;
 				let curEp;
@@ -154,5 +159,4 @@ function startInterval(i, startTime, endTime, episodes){
 			} else if (curDate > endTime) {
 				document.getElementById("show" + i).innerHTML = "Finished Airing";
 			}
-		}, 1000);
 }
