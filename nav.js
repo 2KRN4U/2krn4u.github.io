@@ -35,6 +35,10 @@ function createNav(){
 		case "Read | 2KRN":
 			navRead = "<a class=\"nav-item nav-link active\" href=\"../read\">Read </a> ";
 			break;
+
+		case "Plex Schedule | 2KRN":
+			navPlex = "<a class=\"nav-item nav-link active\" href=\"../plex\">Plex Schedule</a>";
+			break;
 			
 		case "Shows for Brandon | Secret":
 			navSecret = "<a class=\"nav-item nav-link active\" href=\"../secret\">Shows for Brandon | Secret</a>";
