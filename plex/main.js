@@ -1,7 +1,9 @@
 // JavaScript Document
 let showsOrig;
 let shows;
-let fallOn = true;
+let fallOn = false;
+let summerOn = false;
+
 
 $.ajax({
 	url: 'shows.json',
@@ -26,7 +28,7 @@ function hideSeason(){
 		shows = [...showsOrig];
 		for (let i = 0; i < shows.length; i++){
 			if (shows[i]["season"] == "Fall 2020"){
-				shows.pop(i);
+				shows.splice(i, 1);
 				i--;
 			}
 		}
@@ -38,6 +40,44 @@ function hideSeason(){
 	} else if (!fallCheck.checked){
 		let sortMethod = document.getElementById("sortid").value;
 		fallOn = false;
+		
+		for (let i = 0; i < shows.length; i++){
+			clearInterval(shows[i]["interval"]);
+		}
+		shows = [];
+		shows = [...showsOrig];
+		sortOnly(sortMethod);
+		createShows();
+		$("select#sortid").val(sortMethod);
+		document.getElementById("seasonText").innerHTML = "Summer 2020 / Fall 2020";
+	}
+	
+}
+
+function hideSeason2(){
+	if (summerCheck.checked){
+		let sortMethod = document.getElementById("sortid").value;
+		summerOn = true;
+		
+		for (let i = 0; i < shows.length; i++){
+			clearInterval(shows[i]["interval"]);
+		}
+		shows = [];
+		shows = [...showsOrig];
+		for (let i = 0; i < shows.length; i++){
+			if (shows[i]["season"] == "Summer 2020"){
+				shows.splice(i, 1);
+				i--;
+			}
+		}
+		sortOnly(sortMethod);
+		createShows();
+		summerCheck.checked = true;
+		$("select#sortid").val(sortMethod);
+		document.getElementById("seasonText").innerHTML = "Fall 2020";
+	} else if (!summerCheck.checked){
+		let sortMethod = document.getElementById("sortid").value;
+		summerOn = false;
 		
 		for (let i = 0; i < shows.length; i++){
 			clearInterval(shows[i]["interval"]);
@@ -74,6 +114,9 @@ function sortBy(){
 		if (fallOn){
 			document.getElementById("seasonText").innerHTML = "Summer 2020";
 			fallCheck.checked = true;
+		} else if (summerOn){
+			document.getElementById("seasonText").innerHTML = "Fall 2020";
+			summerCheck.checked = true;
 		}
 	} else if (document.getElementById("sortid").value === "Countdown"){
 		shows.sort((a, b) => (a.distance > b.distance ? 1 : -1));
@@ -82,14 +125,31 @@ function sortBy(){
 		if (fallOn){
 			document.getElementById("seasonText").innerHTML = "Summer 2020";
 			fallCheck.checked = true;
+		} else if (summerOn){
+			document.getElementById("seasonText").innerHTML = "Fall 2020";
+			summerCheck.checked = true;
 		}
 	}
 }
 
 /*<select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option>Name</option> <option>Countdown</option>*/
 
+let bothSeasons = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\">Hide Summer Season</label><input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\">Hide Fall Season</label>"
+
+let summerSeason = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\">Hide Summer Season</label>"
+
+let fallSeason = "<input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\">Hide Fall Season</label>"
+
 function createShows(){
-	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\" id=\"seasonText\">Summer 2020 / Fall 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option disabled>Sort by:</option><option value=\"Name\">Name</option> <option value=\"Countdown\">Countdown</option><input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\">Hide Fall Season</label>";
+	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\" id=\"seasonText\">Summer 2020 / Fall 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option disabled>Sort by:</option><option value=\"Name\">Name</option> <option value=\"Countdown\">Countdown</option>";
+	
+	if (!summerOn && !fallOn){
+		document.getElementById("animelist").innerHTML += bothSeasons;
+	} else if (summerOn){
+		document.getElementById("animelist").innerHTML += summerSeason;
+	} else {
+		document.getElementById("animelist").innerHTML += fallSeason;
+	}
 
 	for (let i = 0; i < shows.length; i++){
 		let base = "<div class=\"container py-3\"><div class=\"card\"><div class=\"row \"><div class=\"col-md-4\"><img src=\"" + shows[i]["img_link"] + "\" height=\"450px\" class=\"w-100\"></div><div class=\"col-md-8 px-3\"><div class=\"card-block px-3\"><h4 class=\"card-title\">" + shows[i]["en_name"] + "</h4><h5 class=\"card-title alttitle\">" + shows[i]["romaji"] + "</h5><h5 class=\"card-title alttitle\">" + shows[i]["jp_name"] + "</h5><p class=\"card-text description\">" + shows[i]["desc"] + "</p><h5>Episodes: ";
