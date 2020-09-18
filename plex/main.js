@@ -134,9 +134,9 @@ function sortBy(){
 
 /*<select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option>Name</option> <option>Countdown</option>*/
 
-let bothSeasons = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\" for=\"summerCheck\">Hide Summer Season</label><input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\" for=\"fallCheck\">Hide Fall Season</label>"
+let bothSeasons = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\" for=\"summerCheck\" id=\"summerText\">Hide Summer Season</label><input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\" for=\"fallCheck\" id=\"fallText\">Hide Fall Season</label>"
 
-let summerSeason = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\" for=\"summerCheck\">Hide Summer Season</label>"
+let summerSeason = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideSeason2()\"><label class=\"placeholderText\" for=\"summerCheck\" >Hide Summer Season</label>"
 
 let fallSeason = "<input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\" for=\"fallCheck\">Hide Fall Season</label>"
 
