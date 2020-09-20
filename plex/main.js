@@ -164,7 +164,10 @@ function createShows(){
 		var endTime = Date.parse(shows[i]["end_date"]);
 		var episodes = shows[i]["episodes"];
 		timer(i, startTime, endTime, episodes);
-		shows[i]["interval"] = startInterval(i, startTime, endTime, episodes);
+		if (shows[i]["distance"] != 999999999999999){
+			shows[i]["interval"] = startInterval(i, startTime, endTime, episodes);	
+		}
+		
 		
 	}
 	
@@ -273,6 +276,7 @@ function timer(i, startTime, endTime, episodes){
 				document.getElementById("show" + i).innerHTML = statement;
 
 			} else if (curDate > endTime) {
+				shows[i]["distance"] = 999999999999999;
 				document.getElementById("show" + i).innerHTML = "Finished Airing";
 			}
 }
