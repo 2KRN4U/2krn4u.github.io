@@ -12,7 +12,16 @@ $.ajax({
 		showsOrig = data;
 		shows = [...showsOrig];
 		shows.sort((a, b) => (a.en_name > b.en_name ? 1 : -1));
+		summerOn = true;
+		for (let i = 0; i < shows.length; i++){
+			if (shows[i]["season"] == "Summer 2020"){
+				shows.splice(i, 1);
+				i--;
+			}
+		}
 		createShows();
+		summerCheck.checked = true;
+		document.getElementById("seasonText").innerHTML = "Fall 2020";
       }
 });
 
