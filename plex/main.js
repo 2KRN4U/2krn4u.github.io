@@ -20,7 +20,7 @@ $.ajax({
 			}
 		}
 		createShows();
-		summerCheck.checked = true;
+		//summerCheck.checked = true;
 		document.getElementById("seasonText").innerHTML = "Fall 2020";
       }
 });
@@ -125,7 +125,7 @@ function sortBy(){
 			fallCheck.checked = true;
 		} else if (summerOn){
 			document.getElementById("seasonText").innerHTML = "Fall 2020";
-			summerCheck.checked = true;
+			//summerCheck.checked = true;
 		}
 	} else if (document.getElementById("sortid").value === "Countdown"){
 		shows.sort((a, b) => (a.distance > b.distance ? 1 : -1));
@@ -136,7 +136,7 @@ function sortBy(){
 			fallCheck.checked = true;
 		} else if (summerOn){
 			document.getElementById("seasonText").innerHTML = "Fall 2020";
-			summerCheck.checked = true;
+			//summerCheck.checked = true;
 		}
 	}
 }
