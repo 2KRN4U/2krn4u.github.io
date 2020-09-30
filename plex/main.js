@@ -150,12 +150,13 @@ let summerSeason = "<input type=\"checkbox\" id=\"summerCheck\" onChange=\"hideS
 let fallSeason = "<input type=\"checkbox\" id=\"fallCheck\" onChange=\"hideSeason()\"><label class=\"placeholderText\" for=\"fallCheck\">Hide Fall Season</label>"
 
 function createShows(){
-	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\" id=\"seasonText\">Summer 2020 / Fall 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option disabled>Sort by:</option><option value=\"Name\">Name</option> <option value=\"Countdown\">Countdown</option>";
+	document.getElementById("animelist").innerHTML = "<h3 class=\"placeholderText\" id=\"seasonText\">Fall 2020</h3><select class=\"form-control input-group\" id=\"sortid\" onChange=\"sortBy()\"> <option disabled>Sort by:</option><option value=\"Name\">Name</option> <option value=\"Countdown\">Countdown</option>";
 	
 	if (!summerOn && !fallOn){
 		document.getElementById("animelist").innerHTML += bothSeasons;
 	} else if (summerOn){
-		document.getElementById("animelist").innerHTML += summerSeason;
+		//document.getElementById("animelist").innerHTML += summerSeason;
+		document.getElementById("animelist").innerHTML += "";
 	} else {
 		document.getElementById("animelist").innerHTML += fallSeason;
 	}
