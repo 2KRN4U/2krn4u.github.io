@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+    height: 100%;
+}
+
+
+ .background {
+     background-size: cover;
+	 background-position: center;
+	 background-repeat: no-repeat;
+     display: block;
+     filter: blur(12px);
+     -webkit-filter: blur(12px);
+     height: 100%;
+     width: 100%;
+     left: 0;
+     position: fixed;
+     right: 0;
+     z-index: -1;
+	 background-image:url("https://i.imgur.com/MmPvh3Q.jpeg");
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
