@@ -22,6 +22,8 @@ function convert(event){
 
 		result = a * 100 / b;
 
+		result = Math.round(result);
+
 		document.getElementById('results').innerHTML = result;
 	}
 
